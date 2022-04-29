@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Square+Peg&family=VT323&display=swap" rel="stylesheet">
+    <title>D E C O D E R</title>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <form>
+                <fieldset>
+                    <legend> d e c o d e r</legend>
+                    <div class="mensagem">
+                        <input type="text" name="texto" id="texto" class="inputTexto"
+                            placeholder="digite sua mensagem" />
+                    </div>
+                    <div class="opcao">
+                        <label for="option">escolha a linguaguem</label>
+                        <select name="escolhalinguaguem" class="escolhalinguaguem" id="opcaoinguaguem" required>
+                            <option value="semValor" id="semValor" disabled selected>---</option>
+                            <option value="cCesar" id="cCesar">Cifra de César</option>
+                            <option value="Base64" id="base64">Base64</option>
+                        </select>
+                    </div>
+                    <div class="decoder">
+                        <input type="radio" name="codificar" id="codificar" class="codEDeco" value="codificar" /><label
+                            for="codificar">codificar</label>
+                        <input type="radio" name="codificar" id="decodificar" class="codEDeco"
+                            value="decodificar" /><label for="decodificar">decodificar</label>
+                    </div>
+                    <button> Iniciar </button>
+                    <div class="saida">
+                        <textarea disabled class="areaSaida" id="saidaTexto"
+                            placeholder="sua mensagem será gerada aqui"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

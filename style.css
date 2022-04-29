@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("./fundo-preto-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Square Peg', cursive; 
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box {
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 500px;
+}
+
