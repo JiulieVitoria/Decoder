@@ -4,9 +4,9 @@
 }
 
 body {
-    background-image: url("./fundo-preto-background.png");
+    background-image: url("./backgroundgif.gif");
     background-size: auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: 'Lobster Two', cursive;
     font-family: 'Square Peg', cursive;
     font-family: 'VT323', monospace;
