@@ -15,20 +15,23 @@
 <body>
     <main>
         <div class="box">
-            <form>
-                <fieldset>
+            <form class="forms" name="formulario">
                     <legend> d e c o d e r</legend>
                     <div class="mensagem">
                         <input type="text" name="texto" id="texto" class="inputTexto"
-                            placeholder="digite sua mensagem" />
+                            placeholder="digite sua mensagem"/>
                     </div>
                     <div class="opcao">
                         <label for="option">escolha a linguaguem</label>
-                        <select name="escolhalinguaguem" class="escolhalinguaguem" id="opcaoinguaguem" required>
-                            <option value="semValor" id="semValor" disabled selected>---</option>
+                        <select name="escolhaLinguaguem" class="escolhaLinguaguem" id="opcaoLinguaguem" required>
+                            <option value="semValor" id="semValor" disabled selected>Selecione</option>
                             <option value="cCesar" id="cCesar">Cifra de César</option>
                             <option value="Base64" id="base64">Base64</option>
                         </select>
+                    </div>
+                    <div class="incremento" style="display: none" id="valorIncremento">
+                        <p>incremento da chave</p>
+                        <input type="number" class="inputIncremento" id="numeroIncrementos" default="0" min="1" value="1" />
                     </div>
                     <div class="decoder">
                         <input type="radio" name="codificar" id="codificar" class="codEDeco" value="codificar" /><label
@@ -41,10 +44,10 @@
                         <textarea disabled class="areaSaida" id="saidaTexto"
                             placeholder="sua mensagem será gerada aqui"></textarea>
                     </div>
-                </fieldset>
             </form>
         </div>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
